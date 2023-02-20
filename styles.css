@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 4px 2px -2px black;
+}
+
+.header .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.header .top img {
+    width: 20px;
+    height: auto;
+}
+
+.header .top p {
+    font-family: 'Roboto-Bold', 'Gill Sans', sans-serif;
+}
+
+#header-profile {
+    width: 5vh;
+}
+
+.searchbar {
+    width: 450px;
+    height: 25px;
+    background-color: rgb(227, 232, 239);
+    border-radius: 20px;
+    margin-right: 10%;
+}
+
+.header .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-bottom: 1.5%;
+}
+
+.header .bottom .left {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.header .bottom .left img {
+    width: 60px;
+}
+
+.header .bottom .left p {
+    font-family: 'Roboto-Regular', 'Gill Sans', sans-serif;
+}
+
+.bottom-text{
+    align-self: center;
+    margin-left: 5px;
+}
+
+#at-morgan {
+    font-family: 'Roboto-Bold', 'Gill Sans', sans-serif;
+    font-size: 120%;
+}
+
+.right button {
+    all: unset;
+    background-color: rgb(66, 146, 206);
+    font-family: 'Roboto-Regular', 'Gill Sans', sans-serif;
+    font-size: small;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right button:hover {
+    background-color: rgb(21, 98, 158);
+}
+
+.sidebar {
+    background-color: rgb(66, 146, 206);
+    grid-row: 1 / 3;
+    font-family: 'Roboto-Regular', 'Gill Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: large;
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: 2.5fr 1fr 1fr 1fr 1fr 1fr 2.5fr 1fr 1fr 1fr 10fr;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.sidebar img {
+    width: 20px;
+    display: grid;
+    justify-self: center;
+}
+
+#dashboard-icon {
+    width: 2em;
+    position: relative;
+    top: -5%;
+}
+
+.dashboard {
+    font-size: 1.3em;
+}
+
+.main-content {
+    background-color: rgb(227, 232, 239);
+    box-shadow: inset 0px 4px 8px -6px grey;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 25px;
+}
+
+.main-left p,
+.main-right p {
+    font-family: 'Roboto-Medium', 'Gill Sans', sans-serif;
+}
+
+.main-right .announce p {
+    font-size: small;
+}
+
+.main-left .description,
+.main-right .description {
+    font-family: 'Roboto-Regular', 'Gill Sans', sans-serif;
+    font-size: .9rem;
+    color: grey;
+    margin-top: 2px;
+}
+
+.main-right .description {
+    font-size: .7rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    gap: 30px 20px;
+}
+
+.card {
+    background-color: white;
+    border-left: .5rem solid rgb(236, 103, 139);
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 20px 15px 5px;
+    box-shadow: 2px 2px 7px 3px lightgrey;
+}
+
+.card-text {
+    height: 120px;
+}
+
+.card-icons img {
+    width: 20px;
+}
+
+.card-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.main-right {
+    margin-left: 20px;
+}
+
+.announce {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 7px 3px lightgrey;
+}
+
+.fyi {
+    padding: 20px 0px;
+    border-bottom: 2px solid rgb(232, 230, 230);
+}
+
+.fyi-2 {
+    padding: 20px 0px;
+}
+
+.users {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px 30px 20px 30px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 7px 3px lightgrey;
+}
+
+.user p {
+    font-size: small;
+    font-family: 'Roboto-Regular', 'Gill Sans', sans-serif;
+}
+
+.user .user-tag {
+    color: grey;
+    font-family: 'Roboto-Regular', 'Gill Sans', sans-serif;
+}
+
+.users img {
+    width: 40px;
+    grid-row: 1 / 3;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    margin-top: 25px;
+    justify-content: center;
+}
